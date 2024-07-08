@@ -1,0 +1,31 @@
+identity:
+  author: ahasasjeb
+  name: cogview
+  label:
+    en_US: CogView
+    zh_Hans: CogView 绘画
+    pt_BR: CogView
+  description:
+    en_US: CogView art
+    zh_Hans: CogView 绘画
+    pt_BR: CogView art
+  icon: icon.png
+  tags:
+    - image
+    - productivity
+credentials_for_provider:
+  openai_api_key:
+    type: secret-input
+    required: true
+    label:
+      en_US: OpenAI API key
+      zh_Hans: OpenAI API key
+      pt_BR: OpenAI API key
+    help:
+      en_US: Please input your OpenAI API key
+      zh_Hans: 请输入你的 OpenAI API key
+      pt_BR: Please input your OpenAI API key
+    placeholder:
+      en_US: Please input your OpenAI API key
+      zh_Hans: 请输入你的 OpenAI API key
+      pt_BR: Please input your OpenAI API key
