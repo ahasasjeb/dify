@@ -14,18 +14,18 @@ identity:
     - image
     - productivity
 credentials_for_provider:
-  openai_api_key:
+  api_key:
     type: secret-input
     required: true
     label:
-      en_US: OpenAI API key
-      zh_Hans: OpenAI API key
-      pt_BR: OpenAI API key
+      en_US: Zhipu API key
+      zh_Hans: Zhipu API key
+      pt_BR: Zhipu API key
     help:
-      en_US: Please input your OpenAI API key
-      zh_Hans: 请输入你的 OpenAI API key
-      pt_BR: Please input your OpenAI API key
+      en_US: Please input your Zhipu API key
+      zh_Hans: 请输入你的 智谱 API key
+      pt_BR: Please input your Zhipu API key
     placeholder:
-      en_US: Please input your OpenAI API key
-      zh_Hans: 请输入你的 OpenAI API key
-      pt_BR: Please input your OpenAI API key
+      en_US: Please input your Zhipu API key
+      zh_Hans: 请输入你的 智谱 API key
+      pt_BR: Please input your Zhipu API key
