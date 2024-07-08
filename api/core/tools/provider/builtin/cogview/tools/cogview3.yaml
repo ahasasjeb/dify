@@ -1,0 +1,33 @@
+identity:
+  name: cogview
+  author: OpenAI
+  label:
+    en_US: COGView
+    zh_Hans: COGView 绘画
+    pt_BR: COGView
+  description:
+    en_US: COGView is a powerful drawing tool that can create the image you want based on your prompt
+    zh_Hans: COGView 是一个强大的绘画工具，它可以根据您的提示词创造出您想要的图像
+    pt_BR: COGView é uma ferramenta de desenho poderosa que pode criar a imagem que você deseja com base em seu prompt
+
+description:
+  human:
+    en_US: COGView is a text to image tool
+    zh_Hans: COGView 是一个文本到图像的工具
+    pt_BR: COGView é uma ferramenta de texto para imagem
+  llm: COGView is a tool used to generate images from text
+
+parameters:
+  - name: prompt
+    type: string
+    required: true
+    label:
+      en_US: Prompt
+      zh_Hans: 提示词
+      pt_BR: Prompt
+    human_description:
+      en_US: Image prompt, you can check the official documentation of COGView
+      zh_Hans: 图像提示词，您可以查看COGView的官方文档
+      pt_BR: Prompt de imagem, você pode verificar a documentação oficial do COGView
+    llm_description: Image prompt of COGView, you should describe the image you want to generate as a list of words as detailed as possible
+    form: llm

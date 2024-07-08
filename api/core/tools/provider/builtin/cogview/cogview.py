@@ -2,12 +2,12 @@ from typing import Any
 
 from core.tools.errors import ToolProviderCredentialValidationError
 from core.tools.provider.builtin_tool_provider import BuiltinToolProviderController
-
+from core.tools.provider.builtin.dalle.tools.cogview3 import CogViewTool
 
 class CogViewProvider(BuiltinToolProviderController):
     def _validate_credentials(self, credentials: dict[str, Any]) -> None:
         try:
-            DallE2Tool().fork_tool_runtime(
+            CogViewTool().fork_tool_runtime(
                 runtime={
                     "credentials": credentials,
                 }
@@ -15,8 +15,6 @@ class CogViewProvider(BuiltinToolProviderController):
                 user_id='',
                 tool_parameters={
                     "prompt": "cute girl, blue eyes, white hair, anime style",
-                    "size": "small",
-                    "n": 1
                 },
             )
         except Exception as e:
